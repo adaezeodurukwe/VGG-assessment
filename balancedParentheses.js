@@ -21,7 +21,7 @@ function processData(input) {
     
     if(lengthOfArray % 2 !== 0) return error;
     
-    if(arrayOfString[0] === closeBracket || arrayOfString === closeSquare || arrayOfString === closeBracket) return error;
+    if(arrayOfString[0] === closeParenteses || arrayOfString === closeSquare || arrayOfString === closeBracket) return error;
     
     for (let i = 0; i < arrayOfString.length / 2; i++) {
       miniArray = []
